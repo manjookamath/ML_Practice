@@ -52,7 +52,7 @@ plt.gca().add_artist(legend1)
 # Display plot
 plt.show()
 
-# Task 2.2 - K Means Clustering
+#K Means Clustering
 
 # === Standardize the data ===
 scaler = StandardScaler()
@@ -151,7 +151,7 @@ plt.ylabel("Feature 2 (standardized)", fontsize=12)
 plt.legend()
 plt.show()
 
-# Task 2.3 - Gaussian Mixture Models
+#Gaussian Mixture Models
 
 # === Compute posterior probabilities for each sample ===
 # Returns a (150, 3) array where each column gives the probability of a point belonging to that component
@@ -182,11 +182,6 @@ for i in range(n_components):
 plt.tight_layout()
 plt.show()
 
-# Clustering analysis for `task2_4.npy`
-
-# This document contains a reproducible analysis (code + commentary) to:
-
-#   1. Load `task2_4.npy` from the current working directory.
 #   2. Explore the data and visualise it in 2D (PCA) for intuition.
 #   3. Use repeated K-Means experiments (elbow + silhouette) to propose candidate cluster counts.
 #   4. Fit K-Means and Gaussian Mixture Models (GMM) using all features and compare.
@@ -228,7 +223,6 @@ plt.grid(alpha=0.2)
 plt.show()
 
 ## 3) Determine candidate k using Elbow (inertia) and Silhouette score (k=2..10)
-
 
 Ks = list(range(2,11))
 inertias = []
